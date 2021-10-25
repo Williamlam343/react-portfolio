@@ -1,34 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import Background from './background';
-import { createApi } from 'unsplash-js';
 
 
 
 export default function API() {
 
     const [data, setPictureData] = useState(null)
-    const [query, setQuery] = useState({
-        query: "Tokyo",
-        orientation: "landscape",
-        perPage: 1
-    })
-    const n = Math.floor(Math.random() * 10)
 
-    const api = createApi({
-        accessKey: "rENs0bdJcmAPz0zYssWDx-H8aTYcTlOFqmLb6JjFTsw"
-    })
+    const n = Math.floor(Math.random() * 10)
+    const query = {
+        client_id: "K2iMVN6rqhkd01zScZpMrNTT7nEFkX-2WFNtHC3xf1g",
+        query: "Vietnam Da Nang",
+        orientation: "landscape"
+    }
 
     useEffect(() => {
 
-        api.search
-            .getPhotos(query)
-            .then((result) => {
-                setPictureData(result);
-            })
-            .catch(() => {
-                console.log('something went wrong!');
-            });
+        async function fetchData() {
+            let queryString = new URLSearchParams(query)
+            let data = await (await fetch(`https://api.unsplash.com/search/photos/?${queryString}`)).json()
+            console.log(data)
+            setPictureData(data)
+        }
 
+
+        fetchData()
     }, []);
 
 
@@ -38,16 +34,9 @@ export default function API() {
         return <div>Loading...</div>;
 
     } else {
-        let photo = data.response.results[0]
-        console.log(photo)
-
-
+        let photo = data.results[n]
         return (
-            <div className="bg-fixed bg-cover h-screen absolute">
-
-                <Background photo={photo} />
-
-            </div>
+            <Background photo={photo} />
         );
     }
 

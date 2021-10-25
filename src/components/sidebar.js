@@ -1,42 +1,59 @@
 import React from 'react'
-import { Sidebar, InputItem, DropdownItem, Icon, Item, Logo, LogoText } from "react-sidebar-ui"
+import { Sidebar, DropdownItem, Icon, Item, Logo, LogoText } from "react-sidebar-ui"
 import 'react-sidebar-ui/dist/index.css';
 
 export default function SideNavbar() {
 
     return (
         <div>
+
             <Sidebar bgColor="black" isCollapsed={false}>
+
+                <Icon>
+                    <i class="absolute right-2 top-1 text-3xl material-icons cursor-pointer">
+                        close
+                    </i>
+                </Icon>
+                <Icon>
+                    <i class="absolute right-2 top-1 text-3xl material-icons cursor-pointer invisible">
+                        menu
+                    </i>
+                </Icon>
+
+
                 <Logo
+                    classes="m-16"
                     image='https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/source.gif'
                     imageName='react logo' />
-                <LogoText>React Sidebar UI</LogoText>
-                <DropdownItem
+                <LogoText>William Lam</LogoText>
+                {/* <DropdownItem
                     values={['First', 'Second', 'Third']}
                     bgColor={'black'}>
                     Menu
-                </DropdownItem>
+                </DropdownItem> */}
 
                 <Item bgColor='black'>
-                    <Icon><i className="fas fa-home" /></Icon>
+                    <Icon className="text-end"><i className="relative top-1 material-icons">house</i></Icon>
                     Home
                 </Item >
                 <Item bgColor='black'>
-                    <Icon><i className="fas fa-info" /></Icon>
-                    About
+                    <Icon><i className="relative top-1 material-icons">computer</i></Icon>
+                    My Projects
                 </Item>
                 <Item bgColor='black'>
-                    <Icon><i className="fas fa-sitemap" /></Icon>
-                    My Website
+                    <Icon><i className="relative top-1  material-icons">info</i></Icon>
+                    About Me
                 </Item>
-                <Item bgColor='black'>
-                    <Icon><i className="far fa-address-book" /></Icon>
+
+                <DropdownItem
+                    values={['LinkIn', 'Github', 'Email']}
+                    bgColor={'black'}>
+                    <Icon><i className="relative top-1  material-icons">import_contacts</i></Icon>
                     Contacts
-                </Item>
-                <Item bgColor='black'>
-                    <Icon><i className="fas fa-rss-square" /></Icon>
-                    Blog
-                </Item>
+                </DropdownItem>
+
+
+
 
             </Sidebar >
         </div >

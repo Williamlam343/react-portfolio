@@ -4,14 +4,13 @@ import SideNavbar from "./components/sidebar"
 import API from './components/api';
 import Cards from './components/card';
 import { Row, Col } from "react-materialize"
-
+import homeworks from './components/homework';
 
 
 function App() {
   return (
     <div className="">
       <API />
-
       <SideNavbar />
 
       <Row className=""
@@ -24,18 +23,18 @@ function App() {
 
       <Row>
         <Col
-          className="flex flex-col md:flex-row"
+          className="flex flex-wrap justify center flex-col md:flex-row"
           m={9}
           s={12}
           offset={"m2"}
         >
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+          {homeworks.map(hw => <Cards hw={hw} key={hw.id} />)}
 
         </Col>
       </Row>
+
+
+
 
     </div>
   );

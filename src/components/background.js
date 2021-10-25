@@ -4,10 +4,16 @@ import React from 'react';
 export default function Background({ photo }) {
     const { user, urls } = photo;
 
+
+
     return (
-        <>
-            <img className="" src={urls.raw
-                + "&w=1500&dpr=2"} />
+
+        <div
+            className="w-full h-auto min-h-full fixed bg-cover bg-fixed"
+            style={{
+                backgroundImage: `url("${urls.raw}+ &w=1500&dpr=2")`
+            }}
+        >
             <a
                 className=""
                 target="_blank"
@@ -15,6 +21,7 @@ export default function Background({ photo }) {
             >
                 <span className="absolute right-1 top-0 mix-blend-color-difference text-lg"> Photo by: {user.name} </span>
             </a>
-        </>
+        </div >
+
     )
 }
