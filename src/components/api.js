@@ -10,7 +10,7 @@ export default function API() {
     const n = Math.floor(Math.random() * 10)
     const query = {
         client_id: "K2iMVN6rqhkd01zScZpMrNTT7nEFkX-2WFNtHC3xf1g",
-        query: "Vietnam Da Nang",
+        query: "Vancouver Island",
         orientation: "landscape"
     }
 

@@ -26,11 +26,7 @@ export default function SideNavbar() {
                     image='https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/source.gif'
                     imageName='react logo' />
                 <LogoText>William Lam</LogoText>
-                {/* <DropdownItem
-                    values={['First', 'Second', 'Third']}
-                    bgColor={'black'}>
-                    Menu
-                </DropdownItem> */}
+
 
                 <Item bgColor='black'>
                     <Icon className="text-end"><i className="relative top-1 material-icons">house</i></Icon>

@@ -8,7 +8,7 @@ export default function Cards({ hw }) {
 
         <Card
             closeIcon={<Icon>close</Icon>}
-            header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" reveal waves="light" />}
+            header={<CardTitle alt="hw image" image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" reveal waves="light" />}
             reveal={<p>{hw.description}</p>}
             revealIcon={<Icon>more_vert</Icon>}
             title={hw.name}
