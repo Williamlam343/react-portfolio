@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Background from './background';
+import { Row, Col, Preloader } from "react-materialize"
 
 
 
@@ -10,8 +11,9 @@ export default function API() {
     const n = Math.floor(Math.random() * 10)
     const query = {
         client_id: "K2iMVN6rqhkd01zScZpMrNTT7nEFkX-2WFNtHC3xf1g",
-        query: "Vancouver Island",
-        orientation: "landscape"
+        query: "Forest",
+        orientation: "landscape",
+        content_filter: "low",
     }
 
     useEffect(() => {
@@ -29,9 +31,17 @@ export default function API() {
 
 
 
-
     if (data === null) {
-        return <div>Loading...</div>;
+        return (<Row>
+            <Col s={4}>
+                <Preloader
+                    active
+                    color="blue"
+                    flashing={false}
+                    size="big"
+                />
+            </Col>
+        </Row>)
 
     } else {
         let photo = data.results[n]

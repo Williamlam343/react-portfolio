@@ -9,7 +9,7 @@ export default function Background({ photo }) {
     return (
 
         <div
-            className="w-full h-auto min-h-full fixed bg-cover bg-fixed"
+            className="w-full z-index h-auto min-h-full fixed bg-cover bg-fixed"
             style={{
                 backgroundImage: `url("${urls.raw}+ &w=1500&dpr=2")`
             }}

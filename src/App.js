@@ -1,17 +1,24 @@
 import React from 'react';
-import Center from './components/center';
-import SideNavbar from "./components/sidebar"
-import API from './components/api';
+import Center from './components/center/center';
+import SideNavbar from "./components/sidebar/sidebar"
+import API from './components/background';
+import AboutMe from './components/aboutme';
 import Cards from './components/card';
 import { Row, Col } from "react-materialize"
-import homeworks from './components/homework';
-import projects from './components/projects';
+import homeworks from './components/card/homework';
+import projects from './components/center/projects';
+
 
 function App() {
   return (
     <div className="">
-      {/* <API /> */}
+      <API />
       <SideNavbar />
+      {/* <Row style={{ marginBottom: "0px" }} className="top-20 md:left-20 relative container">
+
+        <AboutMe />
+
+      </Row> */}
 
       <Row className=""
       >

@@ -1,13 +1,13 @@
 import React from 'react'
-import { Sidebar, DropdownItem, Icon, Item, Logo, LogoText } from "react-sidebar-ui"
-import 'react-sidebar-ui/dist/index.css';
+import { Sidebar, Icon, Item, Logo, LogoText } from "react-sidebar-ui"
+
 
 export default function SideNavbar() {
 
     return (
         <div>
 
-            <Sidebar bgColor="black" isCollapsed={false}>
+            <Sidebar classes="grey darken-3" isCollapsed={false}>
 
                 <Icon>
                     <i class="absolute right-2 top-1 text-3xl material-icons cursor-pointer">
@@ -28,25 +28,24 @@ export default function SideNavbar() {
                 <LogoText>William Lam</LogoText>
 
 
-                <Item bgColor='black'>
+                <Item classes='grey darken-3'>
                     <Icon className="text-end"><i className="relative top-1 material-icons">house</i></Icon>
                     Home
                 </Item >
-                <Item bgColor='black'>
+                <Item classes='grey darken-3'>
                     <Icon><i className="relative top-1 material-icons">computer</i></Icon>
                     My Projects
                 </Item>
-                <Item bgColor='black'>
+                <Item classes='grey darken-3'>
                     <Icon><i className="relative top-1  material-icons">info</i></Icon>
                     About Me
                 </Item>
+                <Item classes='grey darken-3'>
 
-                <DropdownItem
-                    values={['LinkIn', 'Github', 'Email']}
-                    bgColor={'black'}>
                     <Icon><i className="relative top-1  material-icons">import_contacts</i></Icon>
                     Contacts
-                </DropdownItem>
+                </Item>
+
 
 
 

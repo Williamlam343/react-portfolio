@@ -1,10 +1,11 @@
 const homeworks = [
     {
         id: 1,
-        name: "Password Genetaror",
+        name: "Password Generator",
         url: "https://github.com/Williamlam343/password-generator",
         description: "A password generator builting using only vanilla js and some simple html and css",
         image: "https://raw.githubusercontent.com/Williamlam343/password-generator/main/Develop/img/password-generator.png",
+        demo: "https://williamlam343.github.io/password-generator/"
     },
     {
         id: 2,

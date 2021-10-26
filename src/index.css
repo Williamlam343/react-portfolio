@@ -8,3 +8,19 @@
   height: auto;
   max-width: 100%;
 }
+
+.z-index {
+  z-index: -1000;
+}
+.z-index-0 {
+  z-index: 0;
+}
+
+.github:hover::before {
+  content: "github";
+  border-radius: 1rem;
+  position: absolute;
+  text-align: center;
+  right: 7.8rem;
+  bottom: 2.9rem;
+}

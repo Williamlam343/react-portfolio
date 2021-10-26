@@ -4,6 +4,7 @@ import App from './App';
 import "./index.css"
 import "materialize-css"
 import "materialize-css/dist/css/materialize.min.css"
+import 'react-sidebar-ui/dist/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
