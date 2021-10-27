@@ -12,13 +12,12 @@ export default function Center({ projects }) {
             fullscreen={false}
             options={{
                 duration: 500,
-                height: 300,
+                height: 400,
                 indicators: true,
-                // interval: 6000
-
+                interval: 6000
             }}
 
-            className="relative bg-white z-depth-2" >
+            className="relative max-w-full mb-20 bg-white z-depth-2" >
             <Slide image={<img alt="" src="" />}>
                 <Caption placement="center">
                     <h2 className="cursor-default">
@@ -35,7 +34,7 @@ export default function Center({ projects }) {
             </Slide>
             <Slide image={<img className="center-img" alt="project image" src={`${projects[0].image}`} />}>
                 <Caption placement="left">
-                    <h3 className="light grey-text cursor-default text-lighten-3">
+                    <h3 className="light grey-text cursor-default text-lighten-3 ">
                         {projects[0].name}
                     </h3>
                     <h6 className="light cursor-default grey-text text-lighten-3">{projects[0].description}</h6>
@@ -49,7 +48,7 @@ export default function Center({ projects }) {
                 </Caption>
             </Slide>
             <Slide image={<img className="center-img" alt="project image" src={`${projects[1].image}`} />}>
-                <Caption placement="left">
+                <Caption placement="right">
                     <h3 className="cursor-default">
                         {projects[1].name}
                     </h3>
@@ -69,28 +68,3 @@ export default function Center({ projects }) {
     )
 }
 
-{/* <Slide >
-    <Caption placement="left">
-     
-    </Caption>
-</Slide>
-<Slide image={<img alt="" src="https://lorempixel.com/780/580/nature/3" />}>
-    <Caption placement="right">
-        <h3>
-            Right Aligned Caption
-        </h3>
-        <h5 className="light grey-text text-lighten-3">
-            Here's our small slogan.
-        </h5>
-    </Caption>
-</Slide>
-<Slide image={<img alt="" src="https://lorempixel.com/580/250/nature/4" />}>
-    <Caption placement="center">
-        <h3>
-            This is our big Tagline!
-        </h3>
-        <h5 className="light grey-text text-lighten-3">
-            Here's our small slogan.
-        </h5>
-    </Caption>
-</Slide> */}

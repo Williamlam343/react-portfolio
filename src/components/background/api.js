@@ -11,9 +11,10 @@ export default function API() {
     const n = Math.floor(Math.random() * 10)
     const query = {
         client_id: "K2iMVN6rqhkd01zScZpMrNTT7nEFkX-2WFNtHC3xf1g",
-        query: "Forest",
+        query: "London night",
         orientation: "landscape",
         content_filter: "low",
+        // color: "black"
     }
 
     useEffect(() => {
