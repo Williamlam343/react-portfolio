@@ -4,22 +4,47 @@ import { Card, Icon, CardTitle } from "react-materialize"
 
 export default function Cards({ hw }) {
 
+    const colors = [
+        'red',
+        'purple',
+        'light',
+        'teal',
+        'green',
+        'yellow',
+        'orange',
+        'grey',
+    ]
+
+    let n = Math.floor(Math.random() * colors.length)
+
 
     return (
 
         <Card
-
+            // horizontal
             closeIcon={<Icon>close</Icon>}
-            header={<CardTitle alt="hw image" image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" reveal waves="light" />}
-            reveal={<p className="z-20">{hw.description}</p>}
-            revealIcon={<Icon className="text-black">more_horiz</Icon>}
-            title={<p className="cursor-default text-center text-2xl">{hw.name}</p>}
+            header={
+                <CardTitle
+
+                    alt="hw image"
+                    image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                    image={require(`../../img/${hw.image}`).default}
+                    reveal
+                    waves={colors[n]}
+                />}
+            reveal={<p className="">{hw.description}</p>}
+            revealIcon={<Icon className="light-blue-text  text-darken-2">more_horiz</Icon>}
+            title={<p className="cursor-default light-blue-text text-darken-3 text-center text-3xl">{hw.name}</p>}
             style={{ margin: "1rem" }}
-            className="z-depth-2 max-w-full md:max-w-xs"
+            className="z-depth-4 grey lighten-4  max-w-full"
         >
 
+            <a href={`${hw.demo}`} target="_blank">
+                <p className="light-blue-text text-darken-2 text-xl absolute left-72" target="_blank">Demo</p>
+            </a>
+
             <a className="github" href={`${hw.url}`} target="_blank">
-                <Icon className="text-black right-6 text-center bottom-2">link</Icon>
+                <Icon className="light-blue-text text-darken-2right-6 bottom-2">link</Icon>
             </a>
 
         </ Card>

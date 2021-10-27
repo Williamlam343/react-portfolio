@@ -6,14 +6,14 @@ import technologies from "./technologies";
 
 
 export default function AboutMe() {
-    console.log(technologies)
+
     return (
         <>
-            <Row className="top-10 mb-5 relative container">
-                <Collapsible className="absolute rounded w-full mb-4 z-depth-5" accordion={true}>
+            <Row className="top-10 mb-20 relative container">
+                <Collapsible className="relative rounded w-full z-depth-5" accordion={true}>
                     <CollapsibleItem
                         expanded
-                        header={<h5 className="m-4">About Me</h5>}
+                        header={<h5 className=" m-4">About Me</h5>}
                         icon={<Icon className="m-1" style={{ fontSize: "3rem" }}>whatshot</Icon>}
                         node="div"
                         className="text-lg">
@@ -55,7 +55,8 @@ export default function AboutMe() {
                     </CollapsibleItem>
                     <div className="backdrop-filter bg-opacity-50 bg-gray-300 backdrop-blur h-full z-index-5 w-full block top-0 absolute">
                     </div>
-                </Collapsible></Row>
+                </Collapsible>
+            </Row>
         </>
     )
 }
