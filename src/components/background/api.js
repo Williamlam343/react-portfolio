@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Background from './background';
 import { Row, Col, Preloader } from "react-materialize"
-
-
+const { REACT_APP_APIKEY } = process.env
 
 export default function API() {
+    console.log(REACT_APP_APIKEY)
 
     const [data, setPictureData] = useState(null)
 
     const n = Math.floor(Math.random() * 10)
     const query = {
-        client_id: "K2iMVN6rqhkd01zScZpMrNTT7nEFkX-2WFNtHC3xf1g",
+        client_id: REACT_APP_APIKEY,
         query: "London night",
         orientation: "landscape",
         content_filter: "low",
