@@ -16,7 +16,7 @@ export default function Background({ photo }) {
         >
             <a
                 className=""
-                target="_blank"
+
                 href={`https://unsplash.com/@${user.username}`}
             >
                 <span className="absolute p-1 right-0 top-0 mix-blend-dodge text-lg"> Photo by: {user.name} </span>

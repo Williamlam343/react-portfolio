@@ -14,7 +14,7 @@ export default function Center() {
             }}
 
             className="relative max-w-full mb-20 grey lighten-3 z-depth-2" >
-            <Slide image={<img src="https://images.unsplash.com/photo-1532080511667-3d838e8d2b55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80" ></img>}>
+            <Slide image={<img alt="center img" src="https://images.unsplash.com/photo-1532080511667-3d838e8d2b55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80" ></img>}>
                 <Caption placement="center">
                     <h2 className="relative md:bottom-8 bottom-24 cursor-default blue-grey-text text--1">
                         Hello World!

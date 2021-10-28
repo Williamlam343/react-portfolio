@@ -28,7 +28,7 @@ export default function Cards({ hw }) {
 
                     alt="hw image"
                     image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
-                    image={require(`../../img/${hw.image}`).default}
+                    // image={require(`../../img/${hw.image}`).default}
                     reveal
                     waves={colors[n]}
                 />}
@@ -39,11 +39,11 @@ export default function Cards({ hw }) {
             className="z-depth-4 grey lighten-4  max-w-full"
         >
 
-            <a href={`${hw.demo}`} target="_blank">
-                <p className="light-blue-text text-darken-2 text-xl " target="_blank">Demo</p>
+            <a href={`${hw.demo}`}>
+                <p className="light-blue-text text-darken-2 text-xl " rel="noreferrer" target="_blank">Demo</p>
             </a>
 
-            <a className="github" href={`${hw.url}`} target="_blank">
+            <a className="github" href={`${hw.url}`} target="_blank" rel="noreferrer">
                 <Icon className="light-blue-text text-darken-2right-6 bottom-2">link</Icon>
             </a>
 
