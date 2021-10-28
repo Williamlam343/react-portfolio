@@ -27,8 +27,8 @@ export default function Cards({ hw }) {
                 <CardTitle
 
                     alt="hw image"
-                    image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
-                    // image={require(`../../img/${hw.image}`).default}
+                    // image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                    image={require(`../../img/${hw.image}`).default}
                     reveal
                     waves={colors[n]}
                 />}
