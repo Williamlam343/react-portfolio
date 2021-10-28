@@ -55,7 +55,7 @@ export default function Center() {
             <Slide image={<img
                 className="center-img"
                 alt="project image"
-                src={require(`../../img/${projects[0].image}`).default}
+                src=""
             />}>
                 <Caption placement="left">
                     <h2 className="md:top-44 top-20 relative light yellow-text cursor-default text-lighten-2 ">
@@ -74,7 +74,7 @@ export default function Center() {
             <Slide image={<img
                 className="center-img"
                 alt="project image"
-                src={require(`../../img/${projects[1].image}`).default}
+                src=""
             />}>
                 <Caption placement="left">
                     <h2 className="md:bottom-20 bottom-10 relative light-blue-text cursor-default text-darken-1">

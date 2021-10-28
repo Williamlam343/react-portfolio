@@ -16,14 +16,8 @@ const projects = [
         details: "A fully functioning fullstack application that allows a user to register an account and a customizable playlist. The app uses OMDB api to search movies that the user then can add to a playlist and favorites list after signing up!",
         image: "watch_dog.png",
         demo: "https://watchdogs3-32d.herokuapp.com/"
-    },
-    // {
-    //     id: 3,
-    //     name: "TBA",
-    //     url: "",
-    //     description: "",
-    //     image: "",
-    // },
+    }
+
 ]
 
 
