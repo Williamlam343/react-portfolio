@@ -3,18 +3,18 @@ import Background from './background';
 import { Row, Col, Preloader } from "react-materialize"
 const { REACT_APP_APIKEY } = process.env
 
-export default function API() {
-    console.log(REACT_APP_APIKEY)
+export default function API(props) {
+
 
     const [data, setPictureData] = useState(null)
 
     const n = Math.floor(Math.random() * 10)
     const query = {
         client_id: REACT_APP_APIKEY,
-        query: "London night",
+        query: props.search || "Florida",
         orientation: "landscape",
         content_filter: "low",
-        // color: "black"
+        // color: "green"
     }
 
     useEffect(() => {

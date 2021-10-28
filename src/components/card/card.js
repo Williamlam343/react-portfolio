@@ -40,7 +40,7 @@ export default function Cards({ hw }) {
         >
 
             <a href={`${hw.demo}`} target="_blank">
-                <p className="light-blue-text text-darken-2 text-xl absolute left-72" target="_blank">Demo</p>
+                <p className="light-blue-text text-darken-2 text-xl " target="_blank">Demo</p>
             </a>
 
             <a className="github" href={`${hw.url}`} target="_blank">
