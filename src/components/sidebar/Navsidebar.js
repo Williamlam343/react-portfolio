@@ -1,6 +1,6 @@
 import React from "react"
 import { SideNav, SideNavItem, Icon } from "react-materialize"
-
+import { Link } from "react-router-dom"
 
 export default function Navsidebar() {
 
@@ -17,7 +17,7 @@ export default function Navsidebar() {
                 }}
                 trigger={
                     <button className="
-                    cursor-pointer grey darken-4 fixed top-0 md:min-h-screen"
+                    cursor-pointer grey darken-4 fixed top-0 md:top-1/4 md:h-40"
                     >
                         <Icon small className=" text-white p-1 top-0">chevron_right</Icon>
                     </button>
@@ -37,27 +37,36 @@ export default function Navsidebar() {
 
 
                 <SideNavItem divider />
-                <SideNavItem
-                    href="#home"
-                    icon={<Icon ><i className="text-white material-icons">home</i></Icon>}
-                    waves
-                >
-                    <p className=" text-white">Home</p>
-                </SideNavItem>
-                <SideNavItem
-                    href="#projects"
-                    icon={<Icon><i className="text-white material-icons">computer</i></Icon>}
-                    waves
-                >
-                    <p className=" text-white">My Projects</p>
-                </SideNavItem>
-                <SideNavItem
-                    href="#aboutme"
-                    icon={<Icon ><i className="text-white material-icons">info_outline</i></Icon>}
-                    waves
-                >
-                    <p className=" text-white">About Me</p>
-                </SideNavItem>
+
+                <Link to={"/"}>
+                    <SideNavItem
+                        href="#home"
+                        icon={<Icon ><i className="text-white material-icons">home</i></Icon>}
+                        waves
+                    >
+                        <p className=" text-white">Home</p>
+                    </SideNavItem>
+                </Link>
+                <Link to={"/projects"}>
+
+                    <SideNavItem
+                        href="#projects"
+                        icon={<Icon><i className="text-white material-icons">computer</i></Icon>}
+                        waves
+                    >
+                        <p className=" text-white">My Projects</p>
+                    </SideNavItem>
+                </Link>
+                <Link to={"/aboutme"}>
+                    <SideNavItem
+                        href="#aboutme"
+                        icon={<Icon ><i className="text-white material-icons">info_outline</i></Icon>}
+                        waves
+                    >
+                        <p className=" text-white">About Me</p>
+                    </SideNavItem>
+
+                </Link>
                 <SideNavItem
                     href="#resume"
                     icon={<Icon ><i className="text-white material-icons">book</i></Icon>}

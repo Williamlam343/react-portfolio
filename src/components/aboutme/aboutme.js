@@ -9,8 +9,8 @@ export default function AboutMe() {
 
     return (
         <>
-            <Row id="aboutme" className="top-10 mb-20 relative container">
-                <Collapsible className="relative rounded w-full z-depth-5" accordion={true}>
+            <Row className=" flex container">
+                <Collapsible className="relative rounded w-full top-12 z-depth-5" accordion={true}>
                     <CollapsibleItem
                         expanded
                         header={<h5 className=" m-4">About Me</h5>}

@@ -19,7 +19,7 @@ export default function Background({ photo }) {
 
                 href={`https://unsplash.com/@${user.username}`}
             >
-                <span className="absolute p-1 right-0 top-0 mix-blend-dodge text-lg"> Photo by: {user.name} </span>
+                <span className="absolute p-1 right-0 top-0 blue-text text-lg"> Photo by: {user.name} </span>
             </a>
         </div >
 

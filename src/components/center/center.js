@@ -12,75 +12,58 @@ export default function Center() {
                 indicators: true,
                 interval: 6000
             }}
-
             className="relative max-w-full grey lighten-3 z-depth-2" >
-            <Slide image={<img src="https://images.unsplash.com/photo-1532080511667-3d838e8d2b55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80" ></img>}>
+            <Slide image={
+
+                <img src="https://images.unsplash.com/photo-1532080511667-3d838e8d2b55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80" ></img>
+
+            }
+
+            >
                 <Caption placement="center">
-                    <h2 className="relative 4 text-6xl cursor-default blue-grey-text">
+                    <h2 className="relative 4 text-4xl md:text-5xl cursor-default blue-grey-text">
                         Hello World!
                     </h2>
-                    <h5 className="relative text-4xl light cursor-default">
-                        My name is William Lam, a fresh graduate of the University of Arizona's fullstack bootcamp program
+                    <h5 className="relative text-2xl md:text-3xl light cursor-default">
+                        My name is William Lam, a full stack web developer.
                     </h5>
                     <h6 >
-                        <a className="light relative text-3xl cursor-pointer orange-text text-accent-3" href={`#aboutme`}>Click here for more about me</a>
+                        <a className="light relative text-3xl cursor-pointer yellow-text text-accent-3" href={`#aboutme`}></a>
                     </h6>
 
                 </Caption>
             </Slide>
 
-            {/* 
-            {projects.map(project =>
-                <Slide
-                    image={
-                        <img
-                            className="center-img"
-                            alt="project image"
-                            src={require(`../../img/${project.image}`).default}
-                        />}>
-                    <Caption placement="left">
-                        <h2 className=" light-blue-text cursor-default text-accent-3 ">
-                            {project.name}
-                        </h2>
-                        <h5 className="light cursor-default light-blue-text text-accent-1">{project.description}</h5>
-                        <h5 >
-                            <a
-                                className="cursor-pointer light white-text text-accent-1" href={`${project.url}`}> Github Link</a>
-                        </h5>
-                        <h5 >
-                            <a className="cursor-pointer light cyan-text text-lighten-3" href={`${project.demo}`}> Live Demo </a>
-                        </h5>
-                    </Caption>
-                </Slide>)} */}
             <Slide image={<img
                 className="center-img"
                 alt="project image"
-            // src={require(`../../img/${projects[0].image}`).default}
+                src="https://raw.githubusercontent.com/athaight/group-project-one/main/assets/img/SoundborderLG.png"
             />}>
                 <Caption placement="left">
-                    <h2 className=" relative light text-6xl cursor-default ">
+                    <h2 className=" relative light text-3xl md:text-5xl cursor-default ">
                         {projects[0].name}
                     </h2>
-                    <h5 className=" relative light cursor-default text-3xl  ">{projects[0].description}</h5>
+                    <h5 className=" relative light cursor-default text-2xl  md:text-3xl  ">{projects[0].description}</h5>
 
                 </Caption>
             </Slide>
-            <Slide image={<img
-                className="center-img"
-                alt="project image"
-            // src={require(`../../img/${projects[1].image}`).default}
-            />}>
-                <Caption placement="left">
-                    <h2 className=" relative text-6xl cursor-default ">
+            <Slide image={
+                <img
+                    className="center-img"
+                    alt="project image"
+                    src="https://raw.githubusercontent.com/Williamlam343/react-portfolio/main/src/img/watch_dog.png"
+                />}>
+                <Caption placement="right">
+                    <h2 className=" relative text-3xl md:text-5xl blue-grey-text cursor-default ">
                         {projects[1].name}
                     </h2>
-                    <h5 className=" relative cursor-default text-3xl ">{projects[1].description}</h5>
+                    <h5 className=" relative cursor-default blue-grey-text cursor text-2xl md:text-3xl text-lighten-2">{projects[1].description}</h5>
 
                 </Caption>
             </Slide>
 
 
-        </Slider>
+        </Slider >
 
     )
 }

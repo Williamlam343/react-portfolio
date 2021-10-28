@@ -1,14 +1,18 @@
 import React from "react"
 import { Row, Col } from "react-materialize"
-import Cards from "../card"
 import Center from "../center"
-import homeworks from '../card/homework';
 import projects from '../center/projects';
-import Projectcard from "../projectcard";
+// import Projectcard from "../projectcard";
+// import homeworks from '../card/homework';
+// import Cards from "../card"
+
+
+
 
 export default function Home() {
 
     return (
+
         <div className="z-index-100">
             <Row id="home" className="container z-index-100">
 
@@ -16,16 +20,17 @@ export default function Home() {
                 >
                     <Center projects={projects} />
                 </Col>
-
-                <Col id="projects"
+                {/* <Col id="projects"
                     className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1"
                     m={12}
                     s={12}>
                     {homeworks.map(hw => <Cards hw={hw} key={hw.id} />)}
                 </Col>
-                <Col className="relative" m={12} s={12}>
-                    {projects.map(project => <Projectcard project={project} key={project.id} />)}
-                </Col>
+                <Route exact path={"/projects"}>
+                    <Col className="relative" m={12} s={12}>
+                        {projects.map(project => <Projectcard project={project} key={project.id} />)}
+                    </Col>
+                </Route> */}
             </Row>
         </div>
     )
