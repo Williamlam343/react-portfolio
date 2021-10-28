@@ -11,9 +11,9 @@ function App() {
     <div>
       <API />
       <SideNavbar />
-      <Home />
+      {/* <Home /> */}
       <AboutMe />
-      <MyModal />
+      {/* <MyModal /> */}
     </div>
   );
 }
