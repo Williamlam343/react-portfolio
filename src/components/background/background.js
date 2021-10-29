@@ -2,7 +2,7 @@ import React from 'react';
 
 
 export default function Background({ photo }) {
-    const { user, urls } = photo;
+    const { urls } = photo;
 
 
 
