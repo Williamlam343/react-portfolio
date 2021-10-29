@@ -8,9 +8,9 @@ export default function API() {
 
     let storage = localStorage.getItem("search")
 
-    let n = 0
 
-    const [number, setNumber] = useState(n)
+
+    const [number, setNumber] = useState(0)
     const [search, setSearch] = useState(null)
     const [result, setResult] = useState(storage)
     const [data, setPictureData] = useState(null)
@@ -107,7 +107,7 @@ export default function API() {
 
                     </form>
                     <p>
-                        <Icon ><i onClick={() => setNumber(Math.floor(Math.random() * 10))} className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">casino</i></Icon>    <span className="relative text-lg bottom-2.5"> Shuffle Background </span>
+                        <Icon ><i onClick={() => setNumber(Math.floor(Math.random() * 10))} className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">casino</i></Icon><span className="relative text-lg bottom-2.5"> Shuffle Background </span>
                         {/* <Icon ><i onClick={() => setNumber(n + 1)} className=" text-4xl cursor-pointer material-icons">chevron_left</i></Icon>
                         <span className="relative bottom-3"> Next Image </span>
                         <Icon ><i onClick={() => setNumber(n - 1)} className="text-4xl cursor-pointer material-icons">chevron_right</i></Icon> */}
