@@ -5,8 +5,12 @@ import API from './components/background';
 import AboutMe from './components/aboutme';
 import Home from "./components/home"
 import Myprojects from './components/myprojects';
-
+// window.location.href = "/"
 function App() {
+
+
+
+
   return (
 
     <Router>

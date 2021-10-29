@@ -120,7 +120,7 @@ export default function API() {
 
     } else {
         let photo = data.results[number]
-        console.log(data.results)
+
         return (
             <>
                 <Background photo={photo} />
