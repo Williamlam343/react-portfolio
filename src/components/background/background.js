@@ -14,13 +14,7 @@ export default function Background({ photo }) {
                 backgroundImage: `url("${urls.raw}+ &w=1500&dpr=2")`
             }}
         >
-            <a
-                className=""
 
-                href={`https://unsplash.com/@${user.username}`}
-            >
-                <span className="absolute p-1 right-0 top-0 blue-text text-lg"> Photo by: {user.name} </span>
-            </a>
         </div >
 
     )

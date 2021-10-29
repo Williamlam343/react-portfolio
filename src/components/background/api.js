@@ -5,6 +5,7 @@ const { REACT_APP_APIKEY } = process.env
 
 export default function API() {
 
+
     let storage = localStorage.getItem("search")
 
 
@@ -24,22 +25,30 @@ export default function API() {
     function submitHandler(e) {
         e.preventDefault()
 
-
-
         setResult(search)
-        setSearch("")
+        setSearch(" ")
     }
 
     useEffect(() => {
 
         async function fetchData() {
 
-            localStorage.setItem("search", query.query)
             let queryString = new URLSearchParams(query)
             let data = await (await fetch(`https://api.unsplash.com/search/photos/?${queryString}`)).json()
             setNumber(Math.floor(Math.random() * 10))
-            setPictureData(data)
+            console.log(data.results.length)
 
+            if (data.results.length !== 0) {
+                localStorage.setItem("search", query.query)
+                setPictureData(data)
+
+            } else {
+
+                localStorage.setItem("search", undefined)
+
+                setResult(null)
+
+            }
         }
 
 
@@ -50,16 +59,13 @@ export default function API() {
     if (data === null) {
 
         return (
-            <Row className="fixed z-50">
-                <Col s={4}>
-                    <Preloader
-                        active
-                        color="blue"
-                        flashing={false}
-                        size="big"
-                    />
-                </Col>
-            </Row>
+            <>
+                <Row className="fixed text-black right-0 z-50">
+                    <Col s={4}>
+                        Uh oh...
+                    </Col>
+                </Row>
+            </>
         )
 
     } else {
@@ -68,6 +74,13 @@ export default function API() {
             <>
                 <Background photo={photo} />
 
+                <a
+                    className=""
+
+                    href={`https://unsplash.com/@${photo.user.username}`}
+                >
+                    <span className="absolute p-1 right-0 top-0 blue-text text-lg"> Photo by: {photo.user.name} </span>
+                </a>
                 <Modal
                     className=""
                     actions={[
