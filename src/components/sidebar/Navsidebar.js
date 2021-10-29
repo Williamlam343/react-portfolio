@@ -9,7 +9,7 @@ export default function Navsidebar() {
         <div>
 
             <SideNav
-                className="grey darken-4"
+                className="grey darken-4 z-50"
                 id="SideNav-31"
                 options={{
                     draggable: true,
@@ -19,7 +19,7 @@ export default function Navsidebar() {
                     <button className="
                     cursor-pointer grey darken-4 fixed top-0 md:top-1/4 md:h-40"
                     >
-                        <Icon small className=" text-white p-1 top-0">chevron_right</Icon>
+                        <Icon small className=" text-white p-1 top-0 z-50">chevron_right</Icon>
                     </button>
                 }
             >

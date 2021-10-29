@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import MyModal from './components/modal';
 import SideNavbar from "./components/sidebar"
 import API from './components/background';
 import AboutMe from './components/aboutme';
@@ -24,7 +22,6 @@ function App() {
         <Route exact path="/projects">
           <Myprojects />
         </Route>
-        {/* <MyModal /> */}
       </div>
     </Router>
   );

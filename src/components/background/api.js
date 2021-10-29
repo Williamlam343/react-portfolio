@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Background from './background'
-    ;
+import Background from './background';
 import { Row, Col, Preloader, Modal, Button, Icon, TextInput } from "react-materialize"
 const { REACT_APP_APIKEY } = process.env
 
@@ -70,12 +69,13 @@ export default function API() {
                 <Background photo={photo} />
 
                 <Modal
+                    className=""
                     actions={[
                         <Button flat modal="close" node="button" waves="green">Close</Button>
                     ]}
                     bottomSheet={false}
                     fixedFooter={false}
-                    header="Change Background"
+                    header={<p className="teal-text text-lighten-1 text-4xl">Change Background</p>}
                     id="Modal-10"
                     open={false}
                     options={{
