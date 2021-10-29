@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/projects">
           <Myprojects />
         </Route>
-        <MyModal />
+        {/* <MyModal /> */}
       </div>
     </Router>
   );
