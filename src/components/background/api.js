@@ -4,7 +4,7 @@ import { Row, Col, Preloader } from "react-materialize"
 const { REACT_APP_APIKEY } = process.env
 
 export default function API(props) {
-
+    console.log(props)
 
     const [data, setPictureData] = useState(null)
 

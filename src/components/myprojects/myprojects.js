@@ -19,7 +19,7 @@ export default function Myprojects() {
                     {projects.map(project => <Projectcard project={project} key={project.id} />)}
                 </Col>
                 <Col id="projects"
-                    className="grid md:grid-cols-2  lg:grid-cols-3 grid-cols-1"
+                    className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1"
                     m={12}
                     s={12}>
                     {homeworks.map(hw => <Cards hw={hw} key={hw.id} />)}
