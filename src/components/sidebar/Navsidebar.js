@@ -1,12 +1,39 @@
 import React from "react"
-import { SideNav, SideNavItem, Icon } from "react-materialize"
+import { SideNav, SideNavItem, Icon, Navbar, NavItem } from "react-materialize"
 import { Link } from "react-router-dom"
+
+
 
 export default function Navsidebar() {
 
 
     return (
         <div>
+            <Navbar
+                alignLinks="right"
+                brand={<a className="brand-logo" target="_blank" href="https://www.linkedin.com/in/william-lam-115325218/">William Lam</a>}
+                centerLogo
+                className="grey darken-4"
+                menuIcon=""
+            // sidenav={ }
+            >
+                <Link to="/aboutme">
+                    <NavItem
+                        waves>
+                        About Me
+                    </NavItem>
+                </Link>
+                <Link to="/projects">
+                    <NavItem href="">
+                        My Work
+                    </NavItem>
+                </Link>
+                <Link to="">
+                    <NavItem href="">
+                        Resume
+                    </NavItem>
+                </Link>
+            </Navbar>
 
             <SideNav
                 className="grey darken-4"
@@ -17,18 +44,18 @@ export default function Navsidebar() {
                 }}
                 trigger={
                     <button className="
-                    cursor-pointer grey darken-4 fixed z-40 top-0 md:top-1/4 md:h-40"
+                    cursor-pointer grey darken-4 absolute left-2 top-3 "
                     >
-                        <Icon small className=" text-white p-1 top-0 ">chevron_right</Icon>
+                        <Icon small className=" text-white p-1 top-0 ">menu</Icon>
                     </button>
                 }
             >
                 <SideNavItem
                     userView
                     user={{
-                        background: require("../../img/lake.jpg").default,
+
                         email: 'williamlam343@gmail.com',
-                        image: 'https://cdn.discordapp.com/attachments/389795272089141250/886092405164605470/SmartSelect_20210713-111905_Chrome.jpg',
+
                         name: 'William Lam'
                     }}
                 >
@@ -55,7 +82,7 @@ export default function Navsidebar() {
                         icon={<Icon><i className="text-white material-icons">computer</i></Icon>}
                         waves
                     >
-                        <p className=" text-white">My Projects</p>
+                        <p className=" text-white">My Work</p>
                     </SideNavItem>
                 </Link>
                 <Link to={"/aboutme"}>
@@ -70,25 +97,29 @@ export default function Navsidebar() {
                 </Link>
                 <SideNavItem
                     href="#resume"
-                    icon={<Icon ><i className="text-white material-icons">book</i></Icon>}
+                    icon={<Icon ><i className="text-white material-icons" >book</i></Icon>}
                     waves
                 >
                     <p className=" text-white">Resume</p>
                 </SideNavItem>
 
+                {/* <Link to={"/aboutme"}>
+                    <SideNavItem
+                        icon={<Icon ><i className="text-white material-icons" >link</i></Icon>}
+                        waves>
+                        <p className="text-white"> Contacts </p>
 
+                    </SideNavItem>
+                </Link>
                 <SideNavItem
-                    icon={<Icon ><i className="text-white material-icons">link</i></Icon>}
-                    subheader>
-                    <p className="text-white"> Contacts </p>
+
+                    target="_blank" href="https://github.com/Williamlam343"
+                >
+                    <a className="text-white">GitHub</a>
                 </SideNavItem>
-                <SideNavItem href="https://github.com/Williamlam343">
-                    <p className="text-white">GitHub</p>
-                </SideNavItem>
-                <SideNavItem
-                    href="https://www.linkedin.com/in/william-lam-115325218/" >
-                    <p className="text-white">LinkedIn</p>
-                </SideNavItem>
+                <SideNavItem >
+                    <a target="_blank" href="https://www.linkedin.com/in/william-lam-115325218/" className="text-white">LinkedIn</a>
+                </SideNavItem> */}
 
             </SideNav>
         </div>

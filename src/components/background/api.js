@@ -130,7 +130,7 @@ export default function API() {
 
                     href={`https://unsplash.com/@${photo.user.username}`}
                 >
-                    <span className="absolute p-1 right-1 top-1 rounded-xl bg-opacity-50 bg-black white-text text-base"> Photo by: {photo.user.name} </span>
+                    <span className="absolute p-1 right-2 top-20 rounded-xl bg-opacity-50 bg-black white-text text-base"> Photo by: {photo.user.name} </span>
                 </a>
                 <Modal
                     className=""
@@ -156,7 +156,7 @@ export default function API() {
                         startingTop: '4%'
                     }}
 
-                    trigger={<Icon small top className="fixed z-10 p-1 left-1 top-1 cursor-pointer rounded-full bg-opacity-50 bg-black grey-text text-lighten-2">settings</Icon>}
+                    trigger={<Icon small top className="absolute z-10 p-1 md:left-1 left-1 top-20 cursor-pointer rounded-full bg-opacity-50 bg-black grey-text text-lighten-2">settings</Icon>}
                 >
                     <p className="text-lg">Search up your favorite places!</p>
                     <form
@@ -170,7 +170,7 @@ export default function API() {
 
 
                     </form>
-                    <div className="grid grid-cols-4">
+                    <div className="grid grid-cols-1 md:grid-cols-4">
                         <div>
                             <Icon ><i onClick={() => setNumber(Math.floor(Math.random() * data.results.length))} className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">casino</i></Icon><span onClick={() => setNumber(Math.floor(Math.random() * data.results.length))} className="cursor-pointer relative text-lg bottom-2.5"> Shuffle Background </span>
                         </div>

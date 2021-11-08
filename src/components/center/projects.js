@@ -16,6 +16,15 @@ const projects = [
         details: "A fully functioning fullstack application that allows a user to register an account and a customizable playlist. The app uses OMDB api to search movies that the user then can add to a playlist and favorites list after signing up!",
         image: "watch_dog.png",
         demo: "https://watchdogs3-32d.herokuapp.com/"
+    },
+    {
+        id: 3,
+        name: "Soles R' US",
+        url: "https://github.com/Williamlam343/Project-3",
+        description: "Shoe E-commerce site",
+        details: "A fully functioning fullstack application that allows a user to register an account and a customizable playlist. The app uses OMDB api to search movies that the user then can add to a playlist and favorites list after signing up!",
+        image: "solesrus.png",
+        demo: "https://soles-r-us-12bodcs.herokuapp.com/"
     }
 
 ]

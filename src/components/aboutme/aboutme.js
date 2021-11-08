@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <>
             <Row className=" flex container">
-                <Collapsible className="relative rounded w-full top-12 z-depth-5" accordion={true}>
+                <Collapsible className="relative rounded grey-text text-lighten-4 w-full top-12 z-depth-5" accordion={true}>
                     <CollapsibleItem
                         expanded
                         header={<h5 className=" m-4">About Me</h5>}
@@ -50,10 +50,10 @@ export default function AboutMe() {
                     >
                         <p style={{ textIndent: "2rem" }} className="mb-4 text-grey-900 mix-blend-dodge">As an aspiring developer I want to continue exploring the possibilities beyond the conventional processes to find creative solutions. I do not want to limit myself within my current knowledge and boundaries. I want to push myself to become a better developer, overcome challenges, and resolve any difficulties I have to face along the road.
                         </p>
-                        <p className="mb-4 text-grey-900 mix-blend-dodge"> Some topics I wish to pursue in the future: Svelte, Python, C#, AngularJs, VueJs, Typescript, AWS
+                        <p className="mb-4 mix-blend-dodge"> Some topics I wish to pursue in the future: Svelte, Python, C#, AngularJs, VueJs, Typescript, AWS
                         </p>
                     </CollapsibleItem>
-                    <div className="backdrop-filter bg-opacity-50 bg-gray-300 backdrop-blur h-full z-index-5 w-full block top-0 absolute">
+                    <div className="backdrop-filter bg-opacity-50 bg-black backdrop-blur h-full z-index-5 w-full block top-0 absolute">
                     </div>
                 </Collapsible>
             </Row>

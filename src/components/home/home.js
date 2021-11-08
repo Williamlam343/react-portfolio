@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col } from "react-materialize"
-import Center from "../center"
-import projects from '../center/projects';
+// import Center from "../center"
+// import projects from '../center/projects';
 // import Projectcard from "../projectcard";
 // import homeworks from '../card/homework';
 // import Cards from "../card"
@@ -18,7 +18,7 @@ export default function Home() {
 
                 <Col className="relative mt-20" m={12} s={12}
                 >
-                    <Center projects={projects} />
+                    {/* <Center projects={projects} /> */}
                 </Col>
                 {/* <Col id="projects"
                     className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1"
