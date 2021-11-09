@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SideNavbar from "./components/sidebar"
-import API from './components/background';
+import Background from './components/background';
 import AboutMe from './components/aboutme';
-import Home from "./components/home"
-import Myprojects from './components/myprojects';
-import MyFooter from './components/footer';
+import Home from "./views/home"
+import Myprojects from './views/myprojects';
+import MyFooter from './views/footer';
 function App() {
 
 
@@ -15,7 +15,7 @@ function App() {
 
     <Router>
       <body className="min-h-screen" >
-        <API />
+        <Background />
         <SideNavbar />
         <Route exact path="/">
           <Home />

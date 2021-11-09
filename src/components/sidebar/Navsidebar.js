@@ -18,7 +18,7 @@ export default function Navsidebar() {
                 centerLogo
                 className="grey darken-4"
                 menuIcon=""
-            // sidenav={ }
+
             >
                 <Link className="flex" to="/aboutme">
                     About Me
@@ -31,9 +31,9 @@ export default function Navsidebar() {
                     My Contacts
                 </NavItem>
 
-                <Link to="">
+                <NavItem to="">
                     Resume
-                </Link>
+                </NavItem>
             </Navbar>
 
             <SideNav
@@ -51,25 +51,10 @@ export default function Navsidebar() {
                     </button>
                 }
             >
-                <SideNavItem
-                    userView
-                    user={{
-
-                        email: 'williamlam343@gmail.com',
-
-                        name: 'William Lam'
-                    }}
-                >
-
-
-                </SideNavItem>
-
-
-                <SideNavItem divider />
 
                 <Link to={"/"}>
                     <SideNavItem
-                        href="#home"
+                        subheader
                         icon={<Icon ><i className="text-white material-icons">home</i></Icon>}
                         waves
                     >
@@ -79,16 +64,16 @@ export default function Navsidebar() {
                 <Link to={"/projects"}>
 
                     <SideNavItem
-                        href="#projects"
+
                         icon={<Icon><i className="text-white material-icons">computer</i></Icon>}
                         waves
                     >
                         <p className=" text-white">My Work</p>
                     </SideNavItem>
                 </Link>
-                <Link to={"/aboutme"}>
+                <Link className="" to={"/aboutme"}>
                     <SideNavItem
-                        href="#aboutme"
+
                         icon={<Icon ><i className="text-white material-icons">info_outline</i></Icon>}
                         waves
                     >
@@ -96,22 +81,26 @@ export default function Navsidebar() {
                     </SideNavItem>
 
                 </Link>
-                <SideNavItem
-                    href="#resume"
-                    icon={<Icon ><i className="text-white material-icons" >book</i></Icon>}
-                    waves
-                >
-                    <p className=" text-white">Resume</p>
-                </SideNavItem>
 
-                <Link to={"#contacts"}>
+                <Link to={"/"}>
                     <SideNavItem
-                        icon={<Icon ><i className="text-white material-icons" >link</i></Icon>}
-                        waves>
-                        <p className="text-white"> Contacts </p>
-
+                        href="#resume"
+                        icon={<Icon ><i className="text-white material-icons" >book</i></Icon>}
+                        waves
+                    >
+                        <p className=" text-white">Resume</p>
                     </SideNavItem>
                 </Link>
+
+
+                <SideNavItem
+                    href="#contacts"
+                    icon={<Icon ><i className="text-white material-icons" >link</i></Icon>}
+                    waves>
+                    <p className="text-white"> Contacts </p>
+
+                </SideNavItem>
+
 
 
             </SideNav>

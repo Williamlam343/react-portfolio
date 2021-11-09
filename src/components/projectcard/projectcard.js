@@ -1,25 +1,35 @@
 import { Card, CardTitle } from "react-materialize"
-
+import React from "react"
+import { useMediaQuery } from 'react-responsive'
 
 export default function Projectcard({ project }) {
-    console.log(project.url)
+
+    const cardIsHoriztonal = useMediaQuery({
+        query: '(min-width: 800px)'
+    })
+
+
     return (
         <Card
-            actions={[
-                <div>
+            style={{ marginBottom: "3rem" }}
 
-                    <a href={`${project.url}`}>Github</a>
-                    <a href={`${project.demo}`}>Demo</a>
-                </div>
+            actions={[
+                <div className="flex">
+
+                    <a href={`${project.url}`} className="p-4 hover:bg-gray-200"  > <p className=" inline teal-text text-darken-2 text-md ">GitHub</p></a>
+                    <a href={`${project.demo}`} className="p-4 hover:bg-gray-200">  <p className="inline teal-text text-darken-2 text-md ">Demo</p></a>
+
+
+                </div >
 
             ]}
-
+            onChange={(e) => console.log(e)}
             header=
             {<CardTitle
-                image={require(`../../img/${project.image}`).default}
+                image={require(`../../img/${project.image}`).default || "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"}
             />}
-            horizontal
-            className=""
+            horizontal={cardIsHoriztonal && true}
+            className="text-teal darken-2"
         >
             <h5>{project.name}</h5>
             <p>{project.details}</p>

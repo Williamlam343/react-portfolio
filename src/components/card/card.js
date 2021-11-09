@@ -27,25 +27,27 @@ export default function Cards({ hw }) {
                 <CardTitle
 
                     alt="hw image"
-                    // image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
-                    image={require(`../../img/${hw.image}`).default}
+                    image={require(`../../img/${hw.image}`).default || "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"}
                     reveal
                     waves={colors[n]}
                 />}
             reveal={<p className="">{hw.description}</p>}
-            revealIcon={<Icon className="light-blue-text  text-darken-2">more_horiz</Icon>}
-            title={<p className="cursor-default grey-text text-darken-3 text-center text-3xl">{hw.name}</p>}
+            revealIcon={<Icon className="text-darken-2">more_horiz</Icon>}
+            title={<p className="cursor-default flex flex-1 grey-text text-darken-3 text-center text-3xl">{hw.name}</p>}
             style={{ margin: "1rem" }}
-            className="z-depth-4 grey lighten-4  max-w-full"
+            className="z-depth-4 grey lighten-4 max-w-full"
+            actions={[
+                <div className="">
+
+                    <a className=" hover:bg-gray-200" href={`${hw.url}`} target="_blank" rel="noreferrer">
+                        <p className="inline teal-text text-darken-2 text-lg ">GitHub</p>
+                    </a>
+                    <a href={`${hw.demo}`} className=" hover:bg-gray-200">
+                        <p className="inline teal-text text-darken-2 text-lg" >Demo</p>
+                    </a>
+                </div>
+            ]}
         >
-
-            <a href={`${hw.demo}`}>
-                <p className="grey-text text-darken-2 text-lg" rel="noreferrer" target="_blank">Demo</p>
-            </a>
-
-            <a className="github" href={`${hw.url}`} target="_blank" rel="noreferrer">
-                <p className="grey-text text-darken-2 text-lg " rel="noreferrer" target="_blank">GitHub</p>
-            </a>
 
         </ Card>
 
