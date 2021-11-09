@@ -5,7 +5,7 @@ import API from './components/background';
 import AboutMe from './components/aboutme';
 import Home from "./components/home"
 import Myprojects from './components/myprojects';
-// window.location.href = "/"
+import MyFooter from './components/footer';
 function App() {
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
 
     <Router>
-      <div>
+      <body className="min-h-screen" >
         <API />
         <SideNavbar />
         <Route exact path="/">
@@ -26,7 +26,9 @@ function App() {
         <Route exact path="/projects">
           <Myprojects />
         </Route>
-      </div>
+      </body>
+      <MyFooter />
+
     </Router>
   );
 }

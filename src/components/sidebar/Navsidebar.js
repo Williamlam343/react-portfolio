@@ -11,27 +11,28 @@ export default function Navsidebar() {
         <div>
             <Navbar
                 alignLinks="right"
-                brand={<a className="brand-logo" target="_blank" href="https://www.linkedin.com/in/william-lam-115325218/">William Lam</a>}
+                brand={<Link className="relative" to="/">
+                    <a className="text-4xl" >William Lam</a>
+                </Link>
+                }
                 centerLogo
                 className="grey darken-4"
                 menuIcon=""
             // sidenav={ }
             >
-                <Link to="/aboutme">
-                    <NavItem
-                        waves>
-                        About Me
-                    </NavItem>
+                <Link className="flex" to="/aboutme">
+                    About Me
                 </Link>
                 <Link to="/projects">
-                    <NavItem href="">
-                        My Work
-                    </NavItem>
+                    My Work
                 </Link>
+
+                <NavItem href="#contacts">
+                    My Contacts
+                </NavItem>
+
                 <Link to="">
-                    <NavItem href="">
-                        Resume
-                    </NavItem>
+                    Resume
                 </Link>
             </Navbar>
 
@@ -46,7 +47,7 @@ export default function Navsidebar() {
                     <button className="
                     cursor-pointer grey darken-4 absolute left-2 top-3 "
                     >
-                        <Icon small className=" text-white p-1 top-0 ">menu</Icon>
+                        <Icon small className=" lg:hidden text-white p-1 top-0 ">menu</Icon>
                     </button>
                 }
             >
@@ -103,7 +104,7 @@ export default function Navsidebar() {
                     <p className=" text-white">Resume</p>
                 </SideNavItem>
 
-                {/* <Link to={"/aboutme"}>
+                <Link to={"#contacts"}>
                     <SideNavItem
                         icon={<Icon ><i className="text-white material-icons" >link</i></Icon>}
                         waves>
@@ -111,15 +112,7 @@ export default function Navsidebar() {
 
                     </SideNavItem>
                 </Link>
-                <SideNavItem
 
-                    target="_blank" href="https://github.com/Williamlam343"
-                >
-                    <a className="text-white">GitHub</a>
-                </SideNavItem>
-                <SideNavItem >
-                    <a target="_blank" href="https://www.linkedin.com/in/william-lam-115325218/" className="text-white">LinkedIn</a>
-                </SideNavItem> */}
 
             </SideNav>
         </div>

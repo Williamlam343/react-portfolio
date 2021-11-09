@@ -109,9 +109,7 @@ export default function API() {
                     </form>
                     <p>
                         <Icon ><i onClick={() => setNumber(Math.floor(Math.random() * data.results.length))} className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">casino</i></Icon><span className="relative text-lg bottom-2.5"> Shuffle Background </span>
-                        {/* <Icon ><i onClick={() => setNumber(n + 1)} className=" text-4xl cursor-pointer material-icons">chevron_left</i></Icon>
-                        <span className="relative bottom-3"> Next Image </span>
-                        <Icon ><i onClick={() => setNumber(n - 1)} className="text-4xl cursor-pointer material-icons">chevron_right</i></Icon> */}
+
                     </p>
                 </Modal>
 
@@ -127,7 +125,7 @@ export default function API() {
 
                 <a
                     className=""
-
+                    target="_blank"
                     href={`https://unsplash.com/@${photo.user.username}`}
                 >
                     <span className="absolute p-1 right-2 top-20 rounded-xl bg-opacity-50 bg-black white-text text-base"> Photo by: {photo.user.name} </span>
@@ -174,11 +172,6 @@ export default function API() {
                         <div>
                             <Icon ><i onClick={() => setNumber(Math.floor(Math.random() * data.results.length))} className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">casino</i></Icon><span onClick={() => setNumber(Math.floor(Math.random() * data.results.length))} className="cursor-pointer relative text-lg bottom-2.5"> Shuffle Background </span>
                         </div>
-
-                        <Link to="clear">
-                            <Icon ><i className=" text-4xl cursor-pointer red-text text-darken-4 material-icons">
-                                filter_none</i></Icon><span className="relative text-black text-lg bottom-2.5"> Clear Components </span>
-                        </Link>
                     </div>
                 </Modal>
 

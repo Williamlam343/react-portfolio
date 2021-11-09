@@ -19,11 +19,6 @@
   z-index: -100;
 }
 
-/* .github:hover::before {
-  content: "To Github link";
-  border-radius: 1rem;
-  position: absolute;
-  text-align: center;
-  left: 55px;
-  bottom: 40px;
-} */
+html {
+  scroll-behavior: smooth;
+}
