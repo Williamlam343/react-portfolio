@@ -7,9 +7,16 @@ export default function MyFooter() {
     return (
         <Footer
             id="contacts"
-            className=" grey darken-4 text-md "
-
+            className="grey darken-4 text-md "
+            copyrights={
+                <div className="flex justify-center">
+                    <p>
+                        Built using React, Materialize, Tailwinds, Unsplash API
+                    </p>
+                </div>
+            }
         >
+
             <h5 className="white-text">
                 My contacts :
             </h5>
@@ -18,6 +25,8 @@ export default function MyFooter() {
                 <li><a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/william-lam-115325218/" target="_blank"><img className="inline m-1" src={require("../../img/linkedin-3-32.png").default} /> LinkedIn</a></li>
                 <li><a className="grey-text text-lighten-3" href="mailto:Williamlam343@gmail.com" target="_blank"> <Icon className="inline m-1 text-4xl" >email</Icon> <span className="relative bottom-3">Williamlam343@gmail.com</span> </a></li>
             </ul>
+
+
         </Footer >
     )
 }
