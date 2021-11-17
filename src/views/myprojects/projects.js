@@ -22,7 +22,7 @@ const projects = [
         name: "Soles R' US",
         url: "https://github.com/Williamlam343/Project-3",
         description: "Shoe E-commerce site",
-        details: "A fully functioning fullstack application that allows a user to register an account and a customizable playlist. The app uses OMDB api to search movies that the user then can add to a playlist and favorites list after signing up!",
+        details: "My of take of a modern e-commerence website, built using react, graphql, tailwind, and materialize. It allows the user to browsers through our collections of brand name shoes and pick any item to purchase. Once all their shopping needs is fulfilled they then proceed to checkout where they are able to complete their purchase via stripe.",
         image: "solesrus.png",
         demo: "https://soles-r-us-12bodcs.herokuapp.com/"
     }

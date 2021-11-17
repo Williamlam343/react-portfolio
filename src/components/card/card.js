@@ -21,7 +21,7 @@ export default function Cards({ hw }) {
     return (
 
         <Card
-            // horizontal
+
             closeIcon={<Icon>close</Icon>}
             header={
                 <CardTitle
@@ -32,17 +32,17 @@ export default function Cards({ hw }) {
                     waves={colors[n]}
                 />}
             reveal={<p className="">{hw.description}</p>}
-            revealIcon={<Icon className="text-darken-2">more_horiz</Icon>}
-            title={<p className="cursor-default flex flex-1 grey-text text-darken-3 text-center text-3xl">{hw.name}</p>}
+            revealIcon={<Icon className="text-darken-2">more_vert</Icon>}
+            title={<p className="cursor-default inline grey-text text-darken-3 text-center text-3xl">{hw.name}</p>}
             style={{ margin: "1rem" }}
             className="z-depth-4 grey lighten-4 max-w-full"
             actions={[
                 <div className="">
 
-                    <a className=" hover:bg-gray-200" href={`${hw.url}`} target="_blank" rel="noreferrer">
+                    <a className="p-3 hover:bg-gray-200" href={`${hw.url}`} target="_blank" rel="noreferrer">
                         <p className="inline teal-text text-darken-2 text-lg ">GitHub</p>
                     </a>
-                    <a href={`${hw.demo}`} className=" hover:bg-gray-200">
+                    <a href={`${hw.demo}`} className="p-3 hover:bg-gray-200" target="_blank" rel="noreferrer">
                         <p className="inline teal-text text-darken-2 text-lg" >Demo</p>
                     </a>
                 </div>

@@ -15,11 +15,12 @@ export default function MyFooter() {
                     </p>
                 </div>
             }
+
         >
 
-            <h5 className="white-text">
+            <p className="text-2xl white-text">
                 My contacts :
-            </h5>
+            </p>
             <ul>
                 <li> <a className="grey-text text-lighten-3" href="https://github.com/Williamlam343" target="_blank"><img className="inline m-1" src={require("../../img/GitHub-Mark-Light-32px.png").default} /> GitHub</a></li>
                 <li><a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/william-lam-115325218/" target="_blank"><img className="inline m-1" src={require("../../img/linkedin-3-32.png").default} /> LinkedIn</a></li>

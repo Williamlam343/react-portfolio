@@ -1,7 +1,7 @@
 import React from "react"
 import { SideNav, SideNavItem, Icon, Navbar, NavItem } from "react-materialize"
 import { Link } from "react-router-dom"
-
+import Resume from "../../pdf/WL-Resume.pdf"
 
 
 export default function Navsidebar() {
@@ -12,7 +12,7 @@ export default function Navsidebar() {
             <Navbar
                 alignLinks="right"
                 brand={<Link className="relative" to="/">
-                    <a className="text-4xl" >William Lam</a>
+                    <a className="text-4xl" > <span className="grey-text text-lighten-3">William Lam</span></a>
                 </Link>
                 }
                 centerLogo
@@ -30,10 +30,9 @@ export default function Navsidebar() {
                 <NavItem href="#contacts">
                     My Contacts
                 </NavItem>
-
-                <NavItem to="">
+                <Link to={Resume} target="_blank">
                     Resume
-                </NavItem>
+                </Link>
             </Navbar>
 
             <SideNav
@@ -79,14 +78,14 @@ export default function Navsidebar() {
                     >
                         <p className=" text-white">About Me</p>
                     </SideNavItem>
-
                 </Link>
 
-                <Link to={"/"}>
+                <Link to={Resume} target="_blank">
                     <SideNavItem
-                        href="#resume"
+                        href={Resume} target="_blank"
                         icon={<Icon ><i className="text-white material-icons" >book</i></Icon>}
                         waves
+                        rel="noreferrer"
                     >
                         <p className=" text-white">Resume</p>
                     </SideNavItem>

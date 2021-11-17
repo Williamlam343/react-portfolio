@@ -1,10 +1,5 @@
 import React from "react"
 import { Row, Col } from "react-materialize"
-// import MyCarousel from "../../components/carousel"
-// import projects from '../center/projects';
-// import Projectcard from "../projectcard";
-// import homeworks from '../card/homework';
-// import Cards from "../card"
 import Center from "../../components/center"
 
 

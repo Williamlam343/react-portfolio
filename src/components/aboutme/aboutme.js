@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <>
             <Row className="container ">
-                <div className="relative rounded-xl w-full md:mb-40 mb-20 top-20 md:top-16">
+                <div className="relative w-full md:mb-40 mb-20 top-20 md:top-16">
                     <div className="text-lg  rounded">
                         <div className="flex lighten-3 grey p-2">
                             <Icon className="m-1" style={{ fontSize: "3rem", position: "flex" }}>whatshot</Icon>
@@ -65,7 +65,7 @@ export default function AboutMe() {
 
                         </div>
                     </div>
-                    <div className="backdrop-filter bg-opacity-70 bg-gray-900 h-full z-index-5 w-full block top-0 absolute">
+                    <div className="backdrop-filter backdrop-blur-md bg-opacity-60 bg-gray-900 h-full z-index-5 w-full block top-0 absolute">
                     </div>
                 </div>
             </Row>

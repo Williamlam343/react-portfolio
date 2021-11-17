@@ -16,8 +16,8 @@ export default function Projectcard({ project }) {
             actions={[
                 <div className="flex">
 
-                    <a href={`${project.url}`} className="p-4 hover:bg-gray-200"  > <p className=" inline teal-text text-darken-2 text-md ">GitHub</p></a>
-                    <a href={`${project.demo}`} className="p-4 hover:bg-gray-200">  <p className="inline teal-text text-darken-2 text-md ">Demo</p></a>
+                    <a href={`${project.url}`} target="_blank" className="p-4 hover:bg-gray-200"  > <p className=" inline teal-text text-darken-2 text-md ">GitHub</p></a>
+                    <a href={`${project.demo}`} target="_blank" className="p-4 hover:bg-gray-200">  <p className="inline teal-text text-darken-2 text-md ">Demo</p></a>
 
 
                 </div >
